@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff8c00;
+}
+
+/* Full-page sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Adjust the font size and spacing for mobile */
+@media screen and (max-width: 768px) {
+    .logo span {
+        font-size: 1rem;
+    }
+    .nav-links {
+        display: flex; /* Display the navigation links */
+        flex-direction: column; /* Stack the links vertically */
+        position: absolute; /* Position the navigation links absolutely */
+        top: 80px; /* Adjust the top position as needed */
+        right: 20px; /* Adjust the right position as needed */
+        background-color: #333; /* Background color for the mobile menu */
+        width: 100%; /* Take up the full width of the screen */
+        text-align: center; /* Center-align the links */
+        display: none; /* Initially hide the navigation links */
+    }
+
+    .nav-links.active {
+        display: flex; /* Display the navigation links when active */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add spacing between the links */
+    }
+}
+/* Add styles for the mobile menu button */
+.mobile-menu-button {
+    display: none; /* Hide the button by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Adjust the appearance of the mobile menu button on small screens */
+@media screen and (max-width: 768px) {
+    /* ... (other styles) */
+    
+    .mobile-menu-button {
+        display: block; /* Display the button on small screens */
+    }
+    
+    /* ... (other styles) */
+}

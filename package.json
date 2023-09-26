@@ -1,0 +1,20 @@
+{
+  "name": "responsive-portfolio-website-patrick",
+  "version": "1.0.0",
+  "description": "- Responsive Portfolio Website Design Using HTML CSS & JavaScript\r - Contains animations when scrolling.\r - Smooth scrolling in each section.\r - Contains a beautiful dark theme.\r - The color of the project can be customized.\r - Sending emails in the contact section.\r - Developed first with the Mobile First methodology, then for desktop.\r - Compatible with all mobile devices and with a beautiful and pleasant user interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bedimcode/responsive-portfolio-website-patrick.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bedimcode/responsive-portfolio-website-patrick/issues"
+  },
+  "homepage": "https://github.com/bedimcode/responsive-portfolio-website-patrick#readme"
+}
