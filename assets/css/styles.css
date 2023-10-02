@@ -390,6 +390,9 @@ svg {
 .skills {
   background-color: var(--container-color);
 }
+#skills{
+  background-color: var(--container-color);
+}
 .skills__container {
   padding-bottom: 2rem;
   row-gap: 3.5rem;
@@ -559,7 +562,16 @@ svg {
 /*=============== SCROLL BAR ===============*/
 
 /*=============== SCROLL UP ===============*/
-
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
+  padding: 6px;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  background-color: var(--body-color);
+  color: var(--first-color);
+}
 /* Show Scroll Up */
 
 /*=============== BREAKPOINTS ===============*/

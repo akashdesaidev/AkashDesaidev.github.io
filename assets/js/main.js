@@ -68,3 +68,19 @@ modeToggle.addEventListener('click', () => {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin:'top',
+  distance:'60px',
+  duration:2500,
+  delay:400,
+  reset:true,
+})
+
+sr.reveal(`.home__data,.home__social,.contact-info`);
+sr.reveal(`.home__image,.contact-form`,{origin: 'bottom',});
+sr.reveal(`.about__image,.skills__data,.project_img`,{origin: 'right'});
+sr.reveal(`.project_img`,{origin: 'left'});
+sr.reveal(`.about__data,.skills__content,.project_info`,{origin: 'left'});
+sr.reveal(`.project_info`,{origin: 'right'});
+sr.reveal(`.about__data,.skills__content`,{origin: 'left'});
+ sr.reveal(`.nav__logo,.nav__toggle,.nav__item`,{interval:100,reset:false});
