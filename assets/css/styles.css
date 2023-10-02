@@ -4,7 +4,9 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
+margin: 0;
+padding: 0;
+display: block;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   /* 
@@ -133,6 +135,7 @@ svg {
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
+  margin:0 3rem;
 }
 
 .grid {
@@ -327,7 +330,7 @@ svg {
 } */
 .project__icon span {
   position: absolute;
-  color: red;
+  
   padding-top: 30px;
 }
 .home__social-link {
@@ -442,10 +445,13 @@ svg {
 .project_img img {
   border-radius: 15px;
 }
-
-.projects {
+#projects{
+  background-color: var(--body-color);
+}
+.projects_content {
   background-color: var(--container-color);
 }
+
 .projects__container {
   row-gap: 2rem;
   justify-content: center;
@@ -459,6 +465,7 @@ svg {
 .projects__img {
   width: 100%;
   height: 100%;
+  
 }
 /* .projects__modal {
   position: absolute;
@@ -595,6 +602,9 @@ svg {
 .show-scroll{
   bottom: 3rem;
 }
+#stats,#calendar{
+  background-color: var(--container-color);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -628,7 +638,9 @@ svg {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-
+  .projects_content img{
+    margin-left: 2rem;
+  }
   .home__data,
   .about__data,
   .skills__data,
