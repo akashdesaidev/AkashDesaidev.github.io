@@ -18,7 +18,7 @@
       -> click on tab (Color Conversion)
       -> Copy the color mode (HSL)
   */
-/* 162  40%*/
+  /* 162  40%*/
   --hue: 162;
   --first-color: hsl(var(--hue), 100%, 40%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
@@ -26,9 +26,8 @@
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(228, 15%, 20%);
   --container-color: hsl(228, 15%, 15%);
-  
 
-   /* light mode */
+  /* light mode */
   /*  */
 
   /*========== Font and typography ==========*/
@@ -52,14 +51,14 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-.light-mode{
+.light-mode {
   --hue: 210;
   --first-color: hsl(210, 100%, 70%);
-  --first-color-alt:#002D62;
+  --first-color-alt: #002d62;
   --title-color: #101010;
   --text-color: #000065;
   --body-color: white;
-  --container-color:#FAF7FB  ;
+  --container-color: #faf7fb;
 }
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1152px) {
@@ -186,7 +185,7 @@ svg {
   align-items: center;
 }
 .nav__logo {
-  color: var(--text-color);
+  color: var(--title-color);
   font-weight: var(--font-medium);
 }
 .nav__logo span {
@@ -294,6 +293,41 @@ svg {
   column-gap: 1.2rem;
   padding-top: 2rem;
 }
+.project_img {
+  padding: 0.2rem;
+}
+.project_icon_container {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.2rem;
+}
+.project__icon {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.2rem;
+  padding: 2rem 0.1rem;
+}
+.project__icon + div {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+.project__icon div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .project__icon img{
+  width: 40px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  object-fit: cover;
+} */
+.project__icon span {
+  position: absolute;
+  color: red;
+  padding-top: 30px;
+}
 .home__social-link {
   display: flex;
   background-color: var(--first-color-alt);
@@ -346,7 +380,7 @@ svg {
 .about__blob path {
   stroke: var(--first-color);
 }
-.about__buttons{
+.about__buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -391,6 +425,19 @@ svg {
 /*=============== SERVICES ===============*/
 
 /*=============== PROJECTS ===============*/
+.projects_content {
+  background-color: var(--body-color);
+  margin: 2rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.project_img img {
+  border-radius: 15px;
+}
+
 .projects {
   background-color: var(--container-color);
 }
@@ -399,16 +446,16 @@ svg {
   justify-content: center;
   padding-block: 1rem;
 }
-.projects__card {
+/* .projects__card {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-}
+} */
 .projects__img {
   width: 100%;
   height: 100%;
 }
-.projects__modal {
+/* .projects__modal {
   position: absolute;
   left: 0;
   bottom: -100%;
@@ -427,7 +474,7 @@ svg {
   justify-content: center;
   align-items: center;
   transition: bottom 0.4s;
-}
+} */
 
 .projects__subtitle,
 .projects__button {
@@ -439,7 +486,17 @@ svg {
   margin-bottom: 0.25rem;
 }
 
-.projects__title {
+
+.allGit {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  row-gap: 3rem;
+}
+
+/* .projects__title {
   font-size: var(--h2-font-size);
 
   margin-bottom: 0.75rem;
@@ -455,7 +512,8 @@ svg {
 }
 .projects__card:hover .projects__modal {
   bottom: 0;
-}
+} */
+
 /*=============== CONTACT ===============*/
 .contact__container {
   padding: 1rem;
@@ -483,17 +541,17 @@ svg {
   height: 12rem;
 }
 
-.contact__button{
+.contact__button {
   justify-content: center;
   cursor: pointer;
 }
 
-.information{
+.information {
   display: flex;
   gap: 20px;
- margin: 2rem 0;
+  margin: 2rem 0;
 }
-.information p{
+.information p {
   margin: auto 0;
 }
 /*=============== FOOTER ===============*/
@@ -532,11 +590,12 @@ svg {
   }
   .home__container,
   .about__container,
-  .skills__container {
+  .skills__container,
+  .projects_content {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  
+
   .home__data,
   .about__data,
   .skills__data,
@@ -544,9 +603,12 @@ svg {
   :is(.section__subtitle, .section__title) {
     text-align: initial;
   }
-  .contact-form .section__title{
+  .allGit {
+    justify-content: space-between;
+  }
+  .contact-form .section__title {
     margin-left: 1rem;
-   }
+  }
   .home__social {
     justify-content: initial;
   }
@@ -560,8 +622,8 @@ svg {
   .projects__container {
     grid-template-columns: repeat(2, 352px);
   }
-  .about__buttons{
-  justify-content: flex-start;
+  .about__buttons {
+    justify-content: flex-start;
   }
 }
 
@@ -569,6 +631,9 @@ svg {
 @media screen and (min-width: 1023px) {
   .section {
     padding-block: 7rem 2rem;
+  }
+  .allGit {
+    justify-content: space-around;
   }
   .section__subtitle {
     font-size: var(--normal-font-size);
