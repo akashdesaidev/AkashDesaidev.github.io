@@ -119,4 +119,3 @@ sr.reveal(`.project_img`,{origin: 'left'});
 sr.reveal(`.about__data,.skills__content,.project_info`,{origin: 'left'});
 sr.reveal(`.project_info`,{origin: 'right'});
 sr.reveal(`.about__data,.skills__content`,{origin: 'left'});
-//  sr.reveal(`.nav__logo`,{interval:100,reset:false});
