@@ -113,9 +113,10 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data,.home__social,.contact-info`);
+sr.reveal(`.projects_content`,{origin: 'bottom',});
 sr.reveal(`.home__image,.contact-form`,{origin: 'bottom',});
-sr.reveal(`.about__image,.skills__data,.project_img`,{origin: 'right'});
-sr.reveal(`.project_img`,{origin: 'left'});
-sr.reveal(`.about__data,.skills__content,.project_info`,{origin: 'left'});
-sr.reveal(`.project_info`,{origin: 'right'});
+sr.reveal(`.about__image,.skills__data`,{origin: 'right'});
+
+sr.reveal(`.about__data,.skills__content`,{origin: 'left'});
+
 sr.reveal(`.about__data,.skills__content`,{origin: 'left'});
