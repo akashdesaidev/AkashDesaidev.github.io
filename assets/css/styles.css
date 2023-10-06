@@ -353,6 +353,9 @@ svg {
   fill: var(--first-color);
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, 0.25));
 }
+.home__blob .home-img{
+  position: relative;
+}
 /*=============== BUTTON ===============*/
 .button {
   display: inline-block;

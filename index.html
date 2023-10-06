@@ -21,7 +21,7 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-      <nav class="nav container">
+      <nav class="nav container" id="nav-menu">
         <a href="#" class="nav__logo">Akash <span>Desai</span> </a>
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
@@ -32,13 +32,16 @@
               <a href="#about" class="nav__link">About Me</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+              <a href="#skills" class="nav__link ">Skills</a>
             </li>
             <li class="nav__item">
               <a href="#projects" class="nav__link">projects</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="./assets/Akash-Resume.pdf"   target="_blank"  class="nav__link" id="resume-link-1">Resume</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link" id="mode-toggle">Theme☀️</a>
@@ -72,7 +75,7 @@
                 />
                 <span> I'm</span>
               </h3>
-              <h1 class="home__title">Akash Desai</h1>
+              <h1 class="home__title" id="user-detail-name">Akash Desai</h1>
 
               <h3 class="home__education">Full-Stack Web Developer</h3>
               <p class="home__description">
@@ -96,6 +99,7 @@
                   href="https://github.com/AkashDesaiMasai"
                   target="_blank"
                   class="home__social-link"
+                  id="contact-github"
                 >
                   <i class="ri-github-fill"></i>
                 </a>
@@ -110,6 +114,7 @@
                   href="https://www.linkedin.com/in/inakashdesai/"
                   target="_blank"
                   class="home__social-link"
+                  id="contact-linkedin"
                 >
                   <i class="ri-linkedin-box-line"></i>
                 </a>
@@ -193,7 +198,7 @@
           <div class="about__data">
             <h3 class="section__subtitle">My <span>Intro</span></h3>
             <h2 class="section__title">About Me</h2>
-            <p class="about__descripton">
+            <p class="about__descripton" id="user-detail-intro">
               I'm a motivated and enthusiastic Full Stack Developer with a fresh
               perspective on web development. I'm passionate about building
               dynamic web applications and i am always excited to take on new
@@ -201,7 +206,7 @@
             </p>
             <div class="about__buttons">
               <a href="#contact" class="button">Contact Me</a>
-              <a href="./assets/Akash-Resume.pdf" target="_blank" class="button"
+              <a href="./assets/Akash-Resume.pdf" target="_blank" class="button" id="resume-link-2"
                 >My Resume
               </a>
             </div>
@@ -269,7 +274,7 @@
                   class="about__img"
                   id="imageBorder"
                   width="740"
-                  height="1025"
+                  height="1020"
                   href="./assets/img/akashBlackSuit-removebg-preview.png"
                 />
               </defs>
@@ -321,8 +326,8 @@
           Recent projects
         </h2>
 
-        <div class="container projects">
-          <div class="projects_content grid">
+        <div class="container projects" >
+          <div class="projects_content grid project-card">
             <div class="project_img">
               <img
                 src="./assets/img/HAAN.png"
@@ -332,8 +337,8 @@
             </div>
 
             <div class="project_info" style="padding: 2rem">
-              <h2 class="">HaanProject</h2>
-              <p>
+              <h2 class="project-title">HaanProject</h2>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 eum expedita, non distinctio veritatis fugiat quaerat
                 perspiciatis adipisci fuga! Aspernatur, et possimus itaque ullam
@@ -342,7 +347,7 @@
               </p>
               <div>
                 <h4>Tech Stacks</h4>
-                <div class="project__icon">
+                <div class="project__icon project-tech-stack">
                   <img
                     src="https://camo.githubusercontent.com/149662647584146f2b62ec0f656c023455f1edfcff7094e185e9474858e88b23/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d2532334533344632362e7376673f7374796c653d666c61742d737175617265266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465"
                     alt=""
@@ -360,13 +365,13 @@
                   <a
                     href="https://akashDesaiMasai.github.io/HaanProject/"
                     target="_blank"
-                    class="button"
+                    class="button project-deployed-link"
                     >view<i class="ri-external-link-line"></i
                   ></a>
                   <a
                     href="https://github.com/anasrashid-1/Haan-Project/"
                     target="_blank"
-                    class="button"
+                    class="button project-github-link"
                     >code<i class="ri-external-link-line"></i
                   ></a>
                 </div>
@@ -374,7 +379,7 @@
             </div>
           </div>
 
-          <div class="projects_content grid">
+          <div class="projects_content grid project-card">
             <div class="project_img">
               <img
                 src="./assets/img/Eco-Tourism.png"
@@ -383,8 +388,8 @@
               />
             </div>
             <div class="project_info" style="padding: 2rem">
-              <h2 class="">Eco_Tourism</h2>
-              <p>
+              <h2 class="project-title">Eco_Tourism</h2>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 eum expedita, non distinctio veritatis fugiat quaerat
                 perspiciatis adipisci fuga! Aspernatur, et possimus itaque ullam
@@ -393,7 +398,7 @@
               </p>
               <div>
                 <h4>Tech Stacks</h4>
-                <div class="project__icon">
+                <div class="project__icon project-tech-stack">
                   <img
                     src="https://camo.githubusercontent.com/149662647584146f2b62ec0f656c023455f1edfcff7094e185e9474858e88b23/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d2532334533344632362e7376673f7374796c653d666c61742d737175617265266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465"
                     alt=""
@@ -411,13 +416,13 @@
                   <a
                     href="https://ecotourism-h159u6sp1-askushw07.vercel.app/"
                     target="_blank"
-                    class="button"
+                    class="button project-deployed-link"
                     >view<i class="ri-external-link-line"></i
                   ></a>
                   <a
                     href="https://github.com/askushw07/ecotourism"
                     target="_blank"
-                    class="button"
+                    class="button project-github-link"
                     >code<i class="ri-external-link-line"></i
                   ></a>
                 </div>
@@ -425,7 +430,7 @@
             </div>
           </div>
 
-          <div class="projects_content grid">
+          <div class="projects_content grid project-card">
             <div class="project_img">
               <img
                 src="./assets/img/Big_Basket.png"
@@ -435,8 +440,8 @@
             </div>
 
             <div class="project_info" style="padding: 2rem">
-              <h2 class="">Big Basket Clone</h2>
-              <p>
+              <h2 class="project-title">Big Basket Clone</h2>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 eum expedita, non distinctio veritatis fugiat quaerat
                 perspiciatis adipisci fuga! Aspernatur, et possimus itaque ullam
@@ -445,7 +450,7 @@
               </p>
               <div>
                 <h4>Tech Stacks</h4>
-                <div class="project__icon">
+                <div class="project__icon project-tech-stack">
                   <img
                     src="https://camo.githubusercontent.com/149662647584146f2b62ec0f656c023455f1edfcff7094e185e9474858e88b23/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68746d6c352d2532334533344632362e7376673f7374796c653d666c61742d737175617265266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465"
                     alt=""
@@ -463,13 +468,13 @@
                   <a
                     href="https://647e005fed84ff2236edc1b9--fastidious-buttercream-e1aa8d.netlify.app/"
                     target="_blank"
-                    class="button"
+                    class="button project-deployed-link"
                     >view<i class="ri-external-link-line"></i
                   ></a>
                   <a
                     href="https://github.com/punitsharma10/bigbasket"
                     target="_blank"
-                    class="button"
+                    class="button project-github-link"
                     >code<i class="ri-external-link-line"></i
                   ></a>
                 </div>
@@ -492,18 +497,21 @@
             id="github-stats-card"
             src="https://github-readme-stats.vercel.app/api?username=AkashDesaiMasai&show_icons=true&theme=dark"
             alt="githubstats"
+            id="github-stats-card" 
           />
 
           <img
             id="github-top-langs"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=AkashDesaiMasai&layout=donut&theme=dark"
             alt="lang"
+            id="github-top-langs"
           />
 
           <img
             id="github-streak-stats"
             src="https://github-readme-streak-stats.herokuapp.com?user=AkashDesaiMasai&theme=whatsapp-dark&border_radius=5.5&exclude_days=Sun"
             alt="streak"
+            id="github-streak-stats"
           />
         </div>
       </section>
@@ -547,7 +555,7 @@
                   class="icon"
                   alt=""
                 />
-                <p>akash.desai3105@gmail.com</p>
+                <p id="contact-email">akash.desai3105@gmail.com</p>
               </div>
               <div class="information">
                 <img
@@ -556,7 +564,7 @@
                   class="icon"
                   alt=""
                 />
-                <p>+91 9685166574</p>
+                <p id="contact-phone">+91 9685166574</p>
               </div>
             </div>
 

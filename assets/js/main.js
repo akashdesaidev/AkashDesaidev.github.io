@@ -100,7 +100,23 @@ const scrollActive = () => {
   });
 };
 
+// Resume Downloader
+const Download =()=>{
+  var link = document.createElement("a");
+  link.href = "./assets/Akash-Resume.pdf"; 
+  link.download = "Akash_Desai_Resume.pdf"; 
+  link.click();
+}
+const Resume = document.getElementById("resume-link-1").addEventListener("click",Download)
+const Resume2 = document.getElementById("resume-link-2").addEventListener("click",Download)
+
+
+
+
+
 window.addEventListener('scroll', scrollActive);
+
+
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
