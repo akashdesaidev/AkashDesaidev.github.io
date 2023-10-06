@@ -675,6 +675,9 @@ svg {
   .home__social {
     justify-content: initial;
   }
+  .footer__social{
+    justify-content: center;
+  }
   .home__blob,
   .about__blob {
     width: 400px;
@@ -779,6 +782,6 @@ svg {
     padding-block: 4.5rem 4rem;
   }
   .footer__conatiner{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
 }
