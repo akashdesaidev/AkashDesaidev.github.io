@@ -103,7 +103,7 @@ const scrollActive = () => {
 // Resume Downloader
 const Download =()=>{
   var link = document.createElement("a");
-  link.href = "./assets/Akash-Resume.pdf"; 
+  link.href = "./assets/Akash_Desai_Resume.pdf"; 
   link.download = "Akash_Desai_Resume.pdf"; 
   link.click();
 }
