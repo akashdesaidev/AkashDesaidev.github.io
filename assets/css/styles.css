@@ -261,7 +261,7 @@ svg {
   color: var(--first-color);
 }
 /*=============== HOME ===============*/
-.home {
+#home {
   background-color: var(--container-color);
 }
 .home__container {
