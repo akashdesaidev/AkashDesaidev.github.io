@@ -104,7 +104,7 @@ const scrollActive = () => {
 const Download =()=>{
   var link = document.createElement("a");
   link.href = "./assets/Akash_Desai_Resume.pdf"; 
-  link.download = "Akash_Desai_Resume.pdf"; 
+  link.download = "Akash-Desai-Resume.pdf"; 
   link.click();
 }
 const Resume = document.getElementById("resume-link-1").addEventListener("click",Download)
