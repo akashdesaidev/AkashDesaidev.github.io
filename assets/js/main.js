@@ -107,6 +107,8 @@ const Download =()=>{
   link.download = "Akash-Desai-Resume.pdf"; 
   link.click();
 }
+
+
 const Resume = document.getElementById("resume-button-1").addEventListener("click",Download)
 const Resume2 = document.getElementById("resume-button-2").addEventListener("click",Download)
 
