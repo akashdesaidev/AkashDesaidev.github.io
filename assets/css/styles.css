@@ -661,7 +661,7 @@ svg {
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 1.5rem;
   }
   .nav__menu {
     width: initial;
@@ -713,6 +713,9 @@ svg {
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
+  .nav__list{
+    column-gap: 3rem;
+  }
   .section {
     padding-block: 7rem 2rem;
   }
