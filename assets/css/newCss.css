@@ -1,0 +1,76 @@
+/* <div class="skills__data">
+<h3 class="section__subtitle">Favourite <span> Skills </span></h3>
+<h2 class="section__title">My Skills</h2>
+<p class="skills__description">
+  I have hands-on experience in HTML, CSS, JavaScript, React, Redux,
+  Git, and GitHub, along with a relentless commitment to continuous
+  learning.
+</p>
+<a href="#projects" class="button">See projects</a>
+</div>
+
+<div class="skills__content">
+<ol class="skills__group">
+  <li class="skills__item">HTML & CSS</li>
+  <li class="skills__item">JavaScrpit</li>
+  <li class="skills__item">React</li>
+  <li class="skills__item">BootStrap</li>
+</ol>
+<ol class="skills__group" start="5">
+  <li class="skills__item">JAVA</li>
+  <li class="skills__item">Git & GitHub</li>
+  <li class="skills__item">Node.js</li>
+  <li class="skills__item">Firebase</li>
+</ol>
+</div>
+
+<div class="skills-card">
+<img class="skills-card-img" src="/" alt="" /><span
+  class="skills-card-name"
+></span>
+</div>
+<div class="skills-card">
+<img class="skills-card-img" src="/" alt="" /><span
+  class="skills-card-name"
+></span>
+</div>
+<div class="skills-card">
+<img class="skills-card-img" src="/" alt="" /><span
+  class="skills-card-name"
+></span>
+</div>
+
+<div class="skills-card">
+<img class="skills-card-img" src="/" alt="" /><span
+  class="skills-card-name"
+></span>
+</div> */
+
+/* .skills__data {
+  text-align: center;
+}
+.skills__description {
+  margin-bottom: 2rem;
+} */
+
+/* .skills__content,
+.skills__group {
+  display: grid;
+}
+.skills__content {
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+.skills__group {
+  row-gap: 1rem;
+  list-style: decimal-leading-zero;
+}
+.skills__item {
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+}
+.skills__item::marker {
+  color: var(--first-color);
+} */
