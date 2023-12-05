@@ -33,6 +33,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
+
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.25rem;
@@ -57,12 +58,12 @@
   --first-color: hsl(210, 100%, 70%);
   --first-color-alt: #002d62;
   --title-color: #101010;
-  --text-color: hsl(228, 8%, 65%);
+  --text-color: black;
   --text-color-light:hsl(207,4%,56%);
   
   /* --body-color:white; */
-  --container-color: #faf7fb; 
-  --body-color:hsl(207,4%,99%);
+  --container-color: #ffffff; 
+  --body-color:#ffffff;
   /* --container-color: hsl(207,4%,99%); */
 }
 /*========== Responsive typography ==========*/
@@ -122,6 +123,8 @@ h4 {
 
 ul {
   list-style: none;
+  
+ 
 }
 
 a {
@@ -282,7 +285,9 @@ svg {
 .home__education {
   font-size: var(--bigger-font-size);
 }
-
+span{
+  color: var(--first-color);
+}
 .home__subtitle span,
 .home__title {
   color: var(--first-color);
@@ -486,7 +491,14 @@ svg {
 .project__title{
   display: flex;
   flex-direction: column;
+
   gap: 0.5rem;
+}
+.project__name{
+  font-size: var(--h1-font-size);
+}
+.project__subtitle{
+  font-size: var(--h2-font-size);
 }
 .project__details{
  display: flex;
@@ -504,7 +516,12 @@ svg {
 .project__desc{
  max-height: 150px;
  overflow-x: auto;
-
+font-size: var(--h3-font-size);
+}
+.features{
+  list-style-type: disc;
+  padding-left: 20px;
+ 
 }
 .project__Tech{
  margin-top: 1rem ;
@@ -519,7 +536,7 @@ svg {
 border: 1px solid var(--title-color);
 color: var(--title-color);
 padding:10px 15px;
-font-size: var(--small-font-size);
+font-size: var(--font-medium);
 border-radius: 5px;
 }
 .project__img {
@@ -562,6 +579,19 @@ margin-left: -12%;
 
 }
 
+
+/*=============== GitHub ===============*/
+.allGit {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+  row-gap: 3rem;
+}
+#calendar {
+  background-color: var(--container-color);
+}
 /*=============== CONTACT ===============*/
 .contact__container {
   padding: 1rem;
