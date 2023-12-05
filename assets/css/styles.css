@@ -57,7 +57,7 @@
   --first-color: hsl(210, 100%, 70%);
   --first-color-alt: #002d62;
   --title-color: #101010;
-  --text-color: #000065;
+  --text-color: hsl(228, 8%, 65%);
   --text-color-light:hsl(207,4%,56%);
   
   /* --body-color:white; */
@@ -363,8 +363,8 @@ svg {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  padding: 1rem 1.75rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1.75rem;
+  border-radius: 1rem;
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: box-shadow 0.4s;
@@ -477,68 +477,90 @@ svg {
 /*=============== SERVICES ===============*/
 
 /*=============== PROJECTS ===============*/
-.projects_content {
-  background-color: var(--body-color);
-  margin: 2rem 0rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.project_img img {
-  border-radius: 15px;
-}
-#projects {
-  background-color: var(--body-color);
-}
-.projects_content {
-  background-color: var(--container-color);
-}
-
-.projects__container {
-  row-gap: 2rem;
-  justify-content: center;
-  padding-block: 1rem;
-}
-
-.projects__img {
-  width: 100%;
-  height: 100%;
-}
-
-.projects__subtitle,
-.projects__button {
-  color: var(--title-color);
-  font-size: var(--small-font-size);
-}
-.projects__subtitle {
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.allGit {
+.project{
   display: flex;
-  flex: 1 0 auto;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 3rem;
-  row-gap: 3rem;
-}
+ flex-direction: column;
+ gap: 2rem;
 
-/* .projects__title {
-  font-size: var(--h2-font-size);
-
-  margin-bottom: 0.75rem;
 }
-.projects__button {
+.project__title{
   display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  font-weight: var(--font-medium);
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.projects__button i {
-  font-size: 1.25rem;
+.project__details{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ gap: 1rem;
 }
-.projects__card:hover .projects__modal {
-  bottom: 0;
-} */
+.project__intro{
+ flex-grow: 1;
+}
+.project__links{
+ display: flex;
+ gap: 1rem;
+}
+.project__desc{
+ max-height: 150px;
+ overflow-x: auto;
+
+}
+.project__Tech{
+ margin-top: 1rem ;
+}
+.Techs{
+ display: flex;
+ gap: 1rem;
+ margin-top: 1rem;
+ flex-wrap: wrap;
+}
+.Tech{
+border: 1px solid var(--title-color);
+color: var(--title-color);
+padding:10px 15px;
+font-size: var(--small-font-size);
+border-radius: 5px;
+}
+.project__img {
+ display: flex;
+ justify-content: flex-end;
+}
+
+.desktop {
+/* Adjust the width based on your preference */
+border-radius: 15px;
+overflow: hidden;
+
+}
+
+.desktop img {
+ border: 4px solid var(--first-color);
+ object-fit: cover;
+ border-radius: 15px;
+ width: 100%;
+ height: 100%;
+}
+
+.mobile {
+ /* Adjust the width based on your preference */
+ height: 70%;
+ align-self: flex-end;
+ border-radius: 15px;
+ overflow: hidden;
+ margin-bottom: -3%;
+margin-left: -12%;
+
+}
+
+.mobile img {
+ border: 4px solid var(--first-color);
+ object-fit: cover;
+ border-radius: 15px;
+ width: 100%;
+ height: 100%;
+
+}
 
 /*=============== CONTACT ===============*/
 .contact__container {
@@ -650,6 +672,26 @@ svg {
 #calendar {
   background-color: var(--container-color);
 }
+
+.project__container{
+  margin: 3rem 0rem;
+  padding: 2rem 1.5rem;
+}
+.project__intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+/* .project__description{
+ 
+  padding: 0rem 0.4rem;
+} */
+
+
+
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -668,6 +710,7 @@ svg {
   .skills__container{
     justify-content: center;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -688,7 +731,7 @@ svg {
   .nav__menu {
     width: initial;
   }
-
+ 
   .home__container,
   .about__container,
   .projects_content {
@@ -739,6 +782,13 @@ svg {
 @media screen and (min-width: 1023px) {
   .nav__list {
     column-gap: 3rem;
+  }
+  .project__details{
+    display: flex;
+    flex-direction: row;
+  }
+  .project__description{
+    width: 65%;
   }
   .section {
     padding-block: 7rem 2rem;
@@ -817,3 +867,4 @@ svg {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
