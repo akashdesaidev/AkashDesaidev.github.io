@@ -103,7 +103,14 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
+::selection {
+  background-color: #b0edd2; /* Background color of the selected text */
+        color: black;     /* Text color of the selected text */
+}
+.light-mode ::selection{
+  background-color: rgb(155, 210, 240); /* Background color of the selected text */
+ 
+}
 input,
 textarea,
 button {
@@ -120,7 +127,9 @@ h4 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-
+p{
+  font-size: var(--h3-font-size);
+}
 ul {
   list-style: none;
   
@@ -386,6 +395,7 @@ span{
 }
 .about__descripton {
   margin-bottom: 2.5rem;
+  
 }
 .about__image {
   justify-self: center;
