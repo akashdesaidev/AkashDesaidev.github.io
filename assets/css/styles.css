@@ -62,7 +62,7 @@
   --text-color-light:hsl(207,4%,56%);
   
   /* --body-color:white; */
-  --container-color: #ffffff; 
+  --container-color: #F6F6F6; 
   --body-color:#ffffff;
   /* --container-color: hsl(207,4%,99%); */
 }
@@ -443,7 +443,7 @@ span{
 
 .skills__info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem 2rem;
 }
 .skills__data {
@@ -451,15 +451,15 @@ span{
   text-align: center;
 }
 .skills__blob {
-  width: 80px;
-  height: 100px;
+  width: 120px;
+  height: 150px;
   background-color: var(--body-color);
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
 }
 .skills__blob img {
-  width: 40px;
+  width: 60px;
 }
 .skills__name {
   font-size: var(--small-font-size);
@@ -750,6 +750,9 @@ margin-left: -12%;
   .skills__container{
     justify-content: center;
   }
+  .skills__info{
+    grid-template-columns: repeat(3, 1fr);
+  }
   
 }
 
@@ -779,7 +782,7 @@ margin-left: -12%;
     align-items: center;
   }
   .skills__container{
-    grid-template-columns: repeat(2,max-content);
+    grid-template-columns: repeat(1,max-content);
     column-gap: 5rem;
   }
   .projects_content img {
@@ -790,6 +793,9 @@ margin-left: -12%;
   :is(.about__data),
   :is(.section__subtitle, .section__title) {
     text-align: initial;
+  }
+  .skills__info{
+    grid-template-columns: repeat(4, 1fr);
   }
   .allGit {
     justify-content: space-between;
@@ -839,7 +845,9 @@ margin-left: -12%;
   .section__subtitle {
     font-size: var(--normal-font-size);
   }
-
+  .skills__info{
+    grid-template-columns: repeat(5, 1fr);
+  }
   .blur-header::after {
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -858,7 +866,9 @@ margin-left: -12%;
   .about__blob {
     width: 550px;
   }
-
+  .skills__info{
+    grid-template-columns: repeat(6, 1fr);
+  }
   .home__content {
     row-gap: 4.5rem;
   }
